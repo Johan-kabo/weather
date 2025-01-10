@@ -76,11 +76,15 @@ function App() {
     >
       {/* Background Image with Overlay */}
       <div 
-        className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+        className="fixed inset-0 transition-opacity duration-1000 ease-in-out"
         style={{
           backgroundImage: `url('${theme.image}')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+          minHeight: '100vh',
+          width: '100%'
         }}
       >
         <div className={`absolute inset-0 ${theme.overlay} backdrop-blur-sm transition-colors duration-1000 ease-in-out`} />
