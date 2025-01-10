@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.dark .bg-white\/10 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dark .bg-white\/90 {
+  background-color: rgba(23, 23, 23, 0.9);
+}
+
+.dark .text-gray-800 {
+  color: rgba(229, 229, 229, 1);
+}
+
+.dark .text-gray-600 {
+  color: rgba(209, 209, 209, 1);
+}
+
+.dark .hover\:bg-blue-50:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
