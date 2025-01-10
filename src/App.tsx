@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Cloud, AlertCircle, Sun, Moon } from 'lucide-react';
+import { Cloud, AlertCircle, Sun, Moon, Backpack } from 'lucide-react';
 import { SearchForm } from './components/SearchForm';
 import { WeatherDisplay } from './components/WeatherDisplay';
 import { SearchHistory } from './components/SearchHistory';
